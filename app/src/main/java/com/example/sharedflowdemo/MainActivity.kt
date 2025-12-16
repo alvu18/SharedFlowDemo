@@ -20,7 +20,9 @@ class MainActivity : ComponentActivity() {
         setContent {
             SharedFlowDemoTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-
+                    ScreenSetup(
+                        modifier = Modifier.padding(innerPadding)
+                    )
                 }
             }
         }
